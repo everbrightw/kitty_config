@@ -11,20 +11,27 @@
       "type": "custom",
       "format": "\u001b[38;2;55;244;153mPOKÉDEX // TERMINAL\u001b[0m"
     },
-    "separator",
-    "os",
-    "uptime",
-    "shell",
-    "terminal",
-    "terminalfont",
-    "cpu",
-    "memory",
-    { "type": "disk", "folders": "/" },
-    "battery",
+    { "type": "separator", "outputColor": "white" },
+    { "type": "os", "keyColor": "white", "outputColor": "white" },
+    { "type": "uptime", "keyColor": "white", "outputColor": "white" },
+    { "type": "shell", "keyColor": "white", "outputColor": "white" },
+    { "type": "terminal", "keyColor": "white", "outputColor": "white" },
+    { "type": "terminalfont", "keyColor": "white", "outputColor": "white" },
+    { "type": "cpu", "keyColor": "white", "outputColor": "white" },
+    { "type": "memory", "keyColor": "white", "outputColor": "white" },
+    {
+      "type": "disk",
+      "folders": "/",
+      "keyColor": "white",
+      "outputColor": "white"
+    },
+    { "type": "battery", "keyColor": "white", "outputColor": "white" },
     {
       "type": "command",
       "key": "Editor",
-      "text": "nvim --version | head -1 | sed 's/NVIM //'"
+      "text": "nvim --version | head -1 | sed 's/NVIM //'",
+      "keyColor": "white",
+      "outputColor": "white"
     },
     "break",
     {
