@@ -9,7 +9,7 @@
   "modules": [
     {
       "type": "custom",
-      "format": "\u001b[38;2;55;244;153mPOKÉDEX // TERMINAL\u001b[0m"
+      "format": "\u001b[1;38;2;255;255;255mPOKÉDEX // TERMINAL\u001b[0m"
     },
     { "type": "separator", "outputColor": "white" },
     { "type": "os", "keyColor": "white", "outputColor": "white" },
@@ -36,7 +36,7 @@
     "break",
     {
       "type": "custom",
-      "format": "\u001b[38;2;4;209;249mCharizard × Chansey · Eldritch edition\u001b[0m"
+      "format": "\u001b[38;2;255;255;255mCharizard × Chansey · Eldritch edition\u001b[0m"
     }
   ]
 }
