@@ -1,0 +1,18 @@
+#!/bin/zsh
+
+art_root="$HOME/.local/share/pokemon-colorscripts/colorscripts"
+favorites=(charizard chansey)
+pokemon_name="${1:-${favorites[$((RANDOM % ${#favorites[@]} + 1))]}}"
+
+variant=regular
+variant_label=""
+if (( RANDOM % 20 == 0 )); then
+  variant=shiny
+  variant_label=" ✦ SHINY"
+fi
+
+art_file="$art_root/$variant/$pokemon_name.txt"
+[[ -r "$art_file" ]] || exit 0
+
+printf '\033[38;2;55;244;153m%s%s\033[0m\n' "${pokemon_name:u}" "$variant_label"
+command cat "$art_file"

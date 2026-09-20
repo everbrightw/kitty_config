@@ -1,0 +1,35 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "command-raw",
+    "source": "~/.local/bin/pokemon-art",
+    "padding": { "right": 3 }
+  },
+  "display": { "separator": "  " },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;55;244;153mPOKÉDEX // TERMINAL\u001b[0m"
+    },
+    "separator",
+    "os",
+    "uptime",
+    "shell",
+    "terminal",
+    "terminalfont",
+    "cpu",
+    "memory",
+    { "type": "disk", "folders": "/" },
+    "battery",
+    {
+      "type": "command",
+      "key": "Editor",
+      "text": "nvim --version | head -1 | sed 's/NVIM //'"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;4;209;249mCharizard × Chansey · Eldritch edition\u001b[0m"
+    }
+  ]
+}
